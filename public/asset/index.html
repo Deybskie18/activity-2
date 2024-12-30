@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOVE AND BEYOND</title>
+    
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css">
+  <script type="module" crossorigin src="./assets/index-b02ae2b4.js"></script>
+  <link rel="stylesheet" href="./assets/index-e81e8f10.css">
+</head>
+<body>
+    <!-- Canvas for Three.js -->
+    <canvas class="webgl"></canvas>
+
+    <h1 id = "gameName">ABOVE AND BEYOND</h1>
+    
+    <!-- Info Icon with Modal -->
+    <div id="info-icon">
+        <i class="fi fi-ss-interrogation" id="toggle-info" aria-label="Game Info"></i>
+        <div id="info-modal" style="display: none;">
+            <h2>Game Rules & Mechanics:</h2>
+            <p>1. Stack the boxes perfectly to reach the next level.</p>
+            <p>2. Misaligned stacks will shrink the box size.</p>
+            <p>3. The game ends when the box is too small to continue or you missed to stack the box.</p>
+            <p>Created by: [Your Name]</p>
+        </div>
+    </div>
+
+    <!-- Main Menu -->
+    <div id="main-menu">
+        <!--Story-->
+        <h3>Welcome to Zyck's Adventure!</h3>
+        <p id="ZycksStory">
+            Meet Zyck, an alien from the planet <strong>Alakitasia</strong>. 
+            <br>His spaceship crashed on Earth due to low fuel while traveling across the universe. 
+            <br>To return home, Zyck must rise above Earth by stacking boxes higher and higher. 
+            <br>Can you help Zyck reach his home planet and continue his intergalactic journey?
+        </p>
+
+        <button class="button" id="start-btn">START GAME</button>
+        <button class="button" id="volume-btn">TOGGLE VOLUME</button>
+
+        
+    </div>
+
+    <div id="controls" style="display: none;"> <!--Initially hidden -->
+        <button id="pause-btn">Pause/Resume</button>
+        <button id="restart-btn">Restart</button>
+    </div>
+    
+
+    <!-- Background Music -->
+    <audio id="menu-music" src="/mainmenuMusic.mp3" loop autoplay></audio>
+
+    <!-- Script -->
+    
+  
+
+</body>
+</html>
